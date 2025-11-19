@@ -1,7 +1,7 @@
 
-ReChorus 实验全流程（Windows + PowerShell +conda）
+ReChorus-FinalMLP-Reproduction 实验全流程（Windows + PowerShell +conda）
 
-适用于 Windows + PowerShell + Conda 环境，项目：ReChorus（含 MovieLens_1M、Amazon Grocery & Gourmet Food 两个数据集的 TopK/CTR 任务）。
+适用于 Windows + PowerShell + Conda 环境，项目：ReChorus-FinalMLP-Reproduction（含 MovieLens_1M、Amazon Grocery & Gourmet Food 两个数据集的 TopK/CTR 任务）。
 
 0. 环境准备
 
@@ -12,7 +12,7 @@ pip install torch pandas numpy scikit-learn tqdm matplotlib # 视你仓库依赖
 
 2) 确保 CUDA 驱动 / 显卡可用（如需 GPU）。
 
-3) 仓库根目录记为：<Root>（例如你本机是 E:\ReChorus-master）。之后均通过参数 -Root "<Root>" 传入。
+3) 仓库根目录记为：<Root>（例如你本机是 E:\ReChorus-FinalMLP-Reproduction）。之后均通过参数 -Root "<Root>" 传入。
 
 1. 数据目录要求
 
@@ -316,6 +316,7 @@ python tools\compute_calibration.py --log_dir ".\log" --out_dir ".\log\calib" --
          ├─ reliability_FinalMLPReImplCTR__Grocery_and_Gourmet_Food__dev__GGFCTR_context000__0__lr=0.png
          └─ ...（共 ~60 张）
  
+
 
 
 
