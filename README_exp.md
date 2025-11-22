@@ -35,11 +35,11 @@ CTR 文件必须包含 user_id, item_id, label。
 2. 一键跑全量实验（多 seed）
 
 使用 scripts\exp_full.ps1。不使用硬编码盘符，通过参数指定路径。
-
+python解释器使用自己的路径，下面用D:\Anaconda3\envs\chorus\python.exe作为示例
 例：用 5 个种子（0..4），GPU 0，不重新生成语料（--regenerate 0）：
 powershell -ExecutionPolicy Bypass -File scripts\exp_full.ps1 `
   -Root "." `
-  -Py "D:\Anaconda3\envs\chorus\python.exe" `
+  -Py "D:\Anaconda3\envs\chorus\python.exe" ` 
   -Seeds 0,1,2,3,4 `
   -Gpu 0 `
   -Regenerate 0
@@ -316,6 +316,7 @@ python tools\compute_calibration.py --log_dir ".\log" --out_dir ".\log\calib" --
          ├─ reliability_FinalMLPReImplCTR__Grocery_and_Gourmet_Food__dev__GGFCTR_context000__0__lr=0.png
          └─ ...（共 ~60 张）
  
+
 
 
 
