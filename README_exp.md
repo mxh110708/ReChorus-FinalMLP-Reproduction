@@ -17,6 +17,8 @@ conda install pytorch==1.12.1 torchvision==0.13.1 cudatoolkit=11.3 -c pytorch
 第二步：使用 conda-forge 安装其余依赖 我们指定 -c conda-forge 来安装其他库，这能保证下载到精确的旧版本：
 conda install -c conda-forge numpy=1.22.3 pandas=1.4.4 scikit-learn=1.1.3 scipy=1.7.3 tqdm matplotlib seaborn ipython jupyter pyyaml
 
+另外也可以参考使用requirements.txt配置环境
+
 2) 确保 CUDA 驱动 / 显卡可用（如需 GPU）。
 
 3) 仓库根目录记为：<Root>（例如你本机是 E:\ReChorus-FinalMLP-Reproduction）。之后均通过参数 -Root "<Root>" 传入。
@@ -323,6 +325,7 @@ python tools\compute_calibration.py --log_dir ".\log" --out_dir ".\log\calib" --
          ├─ reliability_FinalMLPReImplCTR__Grocery_and_Gourmet_Food__dev__GGFCTR_context000__0__lr=0.png
          └─ ...（共 ~60 张）
  
+
 
 
 
