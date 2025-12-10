@@ -1,4 +1,5 @@
 建议直接看Code,不要看Preview
+
 ReChorus-FinalMLP-Reproduction 实验全流程（Windows + PowerShell +conda）
 
 适用于 Windows + PowerShell + Conda 环境，项目：ReChorus-FinalMLP-Reproduction（含 MovieLens_1M、Amazon Grocery & Gourmet Food 两个数据集的 TopK/CTR 任务）。
@@ -325,6 +326,7 @@ python tools\compute_calibration.py --log_dir ".\log" --out_dir ".\log\calib" --
          ├─ reliability_FinalMLPReImplCTR__Grocery_and_Gourmet_Food__dev__GGFCTR_context000__0__lr=0.png
          └─ ...（共 ~60 张）
  
+
 
 
 
