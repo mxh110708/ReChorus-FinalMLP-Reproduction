@@ -38,7 +38,7 @@ conda install -c conda-forge numpy=1.22.3 pandas=1.4.4 scikit-learn=1.1.3 scipy=
 
 ## 1. 数据目录要求
 
-`<Root>\data\` 下应已经存在如下子目录（需前期准备好）：
+`<Root>\data\` 下应已经存在如下子目录（需前期准备好，通过运行 data 目录下的 Amazon.ipynb与 MovieLens-1M.ipynb 脚本生成）：
 
 ```text
 <Root>\data\
@@ -320,4 +320,5 @@ python tools\compute_calibration.py --log_dir ".\log" --out_dir ".\log\calib" --
    ├─ report_auc/                     # 最终报告素材
    ├─ report_logloss/                 
    └─ calib/                          # 校准图与数据
+
 ```
